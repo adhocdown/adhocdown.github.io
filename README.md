@@ -1,16 +1,5 @@
-Pure CSS Layout Examples
-========================
+Personal Website for Haley Alexander Adams
 
-Layout examples using [Pure CSS][pure] compiled from the [pure-site][] project.
+I'm not a fan of many of the conventional 'mobile-first' web development trends. Therefore, for my personal website I have elected to use pure html and css. This was a fun little project, and I will maintain this website as an ongoing project to tinker with in my free time. 
 
-[pure]: http://purecss.io/
-[pure-site]: https://github.com/yahoo/pure-site
-
-
-License
--------
-
-This software is free to use under the Yahoo! Inc. BSD license.
-See the [LICENSE file][] for license text and copyright information.
-
-[LICENSE file]: https://github.com/yahoo/pure-site/blob/master/LICENSE.md
+Thank you for stopping by. I hope you've enjoyed my little readme file. 
