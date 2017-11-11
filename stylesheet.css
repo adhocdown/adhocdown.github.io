@@ -11,7 +11,7 @@
 	WEB FUNDAMENTALS BY GOOGLE DEV		https://developers.google.com/web/fundamentals/?hl=en */
 
 html {
-	background-image: url(img/DeathtoStock_Simplify8.jpg);
+	background-image: url(img/DeathtoStock_Simplify8b.jpg);
 	/*DeathtoStock_Simplify8*/
 	-webkit-background-size: cover;		/*conditional covers */
 	-moz-background-size: cover;
@@ -134,7 +134,7 @@ a:hover {
 /* IMPORTANT IMPORTANT Media Queries! IMPORTANT IMPORTANT OH YEAH */
 /* Change if the viewport is 600px or wider */
  @media screen and (min-width: 900px) {
-.container 	{			/*fabulous centers and constrains margin*/
+.container 	{			/*fabulous centers and constrains margin*/			
 			padding-top: 250px;
 			margin: auto;
 			max-width: 800px; 
