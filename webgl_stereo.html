@@ -4,7 +4,8 @@
     <title>three.js webgl - effects - stereo</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script> -->
+    <script src="build/three.min.js"></script>
 
     <style>
 			body {
@@ -36,7 +37,7 @@
 
 <body>
 <div id="info">
-    <a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - effects - stereo. skybox by <a href="http://www.zfight.com/" target="_blank" rel="noopener">Jochum Skoglund</a>
+    <a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - effects - stereo. skybox by <a href="http://www.zfight.com/" target="_blank" rel="noopener">Humus?</a>
 </div>
 
 <script src="build/three.js"></script>
@@ -50,14 +51,12 @@
 			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 			var container;
-
 			var camera, scene, renderer, effect;
 
 			var mesh, lightMesh, geometry;
 			var spheres = [];
 
 			var directionalLight, pointLight;
-
 			var mouseX = 0, mouseY = 0;
 
 			var windowHalfX = window.innerWidth / 2;
@@ -73,38 +72,38 @@
 				container = document.createElement( 'div' );
 				document.body.appendChild( container );
 
-				camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 100000 );
+				camera = new THREE.PerspectiveCamera( 95, window.innerWidth / window.innerHeight, 1, 100000 );
 				camera.position.z = 3200;
 
+                // Scene Setup
 				scene = new THREE.Scene();
 				scene.background = new THREE.CubeTextureLoader()
-					.setPath( 'https://adhocdown.github.io/textures/Park3Med/' )
-					.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
-
+					.setPath( 'https://adhocdown.github.io/textures/' )
+					.load( [ 'thefog_rt.jpg', 'thefog_lf.jpg', 'thefog_up.jpg', 'thefog_dn.jpg', 'thefog_bk.jpg', 'thefog_ft.jpg' ] );
+					//.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
 				var geometry = new THREE.SphereBufferGeometry( 100, 32, 16 );
 
+                // For Refraction of Bubbles
 				var textureCube = new THREE.CubeTextureLoader()
-					.setPath( 'https://adhocdown.github.io/textures/Park3Med/' )
-					.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
+					.setPath( 'https://adhocdown.github.io/textures/' )
+					.load( [ 'thefog_rt.jpg', 'thefog_lf.jpg', 'thefog_up.jpg', 'thefog_dn.jpg', 'thefog_bk.jpg', 'thefog_ft.jpg' ] );
+					//.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
 				textureCube.mapping = THREE.CubeRefractionMapping;
-
 				var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube, refractionRatio: 0.95 } );
 
-				for ( var i = 0; i < 500; i ++ ) {
 
+                // Instantiate ## of Bubbles
+				for ( var i = 0; i < 6; i ++ ) {
 					var mesh = new THREE.Mesh( geometry, material );
 					mesh.position.x = Math.random() * 10000 - 5000;
 					mesh.position.y = Math.random() * 10000 - 5000;
 					mesh.position.z = Math.random() * 10000 - 5000;
 					mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 3 + 1;
 					scene.add( mesh );
-
 					spheres.push( mesh );
-
 				}
 
-				//
-
+				// Render and Use Stereo Effect
 				renderer = new THREE.WebGLRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
 				container.appendChild( renderer.domElement );
@@ -112,14 +111,13 @@
 				effect = new THREE.StereoEffect( renderer );
 				effect.setSize( window.innerWidth, window.innerHeight );
 
-				//
-
+				// Event Listener for Resized Window
 				window.addEventListener( 'resize', onWindowResize, false );
 
 			}
 
+            // Resize Window and Adjust Projection Matrix
 			function onWindowResize() {
-
 				windowHalfX = window.innerWidth / 2;
 				windowHalfY = window.innerHeight / 2;
 
@@ -127,28 +125,23 @@
 				camera.updateProjectionMatrix();
 
 				effect.setSize( window.innerWidth, window.innerHeight );
-
 			}
 
+            // Move Camera with Mouse
 			function onDocumentMouseMove( event ) {
-
 				mouseX = ( event.clientX - windowHalfX ) * 10;
 				mouseY = ( event.clientY - windowHalfY ) * 10;
-
 			}
 
-			//
-
+			// Animate Bubbles
 			function animate() {
-
 				requestAnimationFrame( animate );
-
 				render();
 
 			}
 
+            // Render Scene - Adjust Camera and Move Bubbles
 			function render() {
-
 				var timer = 0.0001 * Date.now();
 
 				camera.position.x += ( mouseX - camera.position.x ) * .05;
