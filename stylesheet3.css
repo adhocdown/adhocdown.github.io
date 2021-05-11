@@ -1,0 +1,304 @@
+/* 	Best Practice For Later:
+/ 	*CSS Reset for safety reasons   -----> Normalize.css may be a better alt ((Pure. Base))
+/	*Optimize your images!! -try Smush It-
+/	*Use conditional comments (for browser variation)
+/	*Place JS file at bottom
+/	*test different browsers as you build
+/	*Dont use @import, bc it's slow
+*/
+
+/*	CHECK THIS OUT:: 
+	WEB FUNDAMENTALS BY GOOGLE DEV		https://developers.google.com/web/fundamentals/?hl=en */
+
+html {
+	background-image: linear-gradient( 180deg, #ffffff,  #dadada);   
+	-webkit-background-size: cover;		/*conditional covers */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	font-family: Verdana, serif;
+	background-repeat: no-repeat;
+	background-position: center center;
+	
+	/*sticky footer fix? */
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {		/*solves for inheritance!*/
+  box-sizing: inherit;
+}
+
+/* Prevent content from getting clipped at top or bottom */
+.container {
+	padding-top: 9em; 
+	padding-bottom: 9em;
+}
+
+
+/*random text color change*/
+.highlight {
+	color: #274e6b;
+	font-weight: 500;
+	display: inline;
+
+}
+
+/* Styling for the Nav Bar */
+.nav {
+	z-index: 9999;
+	width: 100%;	
+	background-color: #010427; 
+	opacity: 0.95;
+	position: fixed;
+}
+.nav .navname {
+	float: left; 
+	position: absolute; 
+	color: #fff;	
+	font-weight: 600; 
+	padding-left: 1em;
+}
+.nav ul {
+	text-align: right;
+}
+.nav ul li {
+	display: inline;
+	margin: 0 25px 0 0;
+	color: #fff;
+}
+.nav a {
+	text-decoration: none;
+	font-weight: 500; /*600*/
+	color: white;
+}
+.nav a:hover {
+    color: #6689a7; 
+}
+
+
+/* Handle general hyperlinks */
+a {
+	text-decoration: underline;
+	font-weight: 500;
+	color: #5c5d61; 
+	/*color: #905739;*/  /*#CCAB13   #A5FFC2*/
+}
+a:hover {
+    color: #6689a7;   /* #d1c8c0; */
+}
+
+
+/* Profile section */
+#profile img{	
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	float: center; 
+	min-width: 13em; 
+	max-width: 17em;	
+	width: 100%;		  
+}
+#contact_info {
+	width: 100%;		  
+}
+#contact_info h3{
+	font-weight: 500; 
+	text-align: center;
+}
+#contact_info p{
+	font-size: 11pt;
+	text-align: center;
+}
+#contact_info ul {
+	margin-left: 0; 
+	margin-right: 3em; 	 
+	text-align: center;
+}
+#contact_info ul li {
+	display: inline;	
+	margin: 0 0px 0 0;
+}
+#contact_info ul li img {
+	max-width: 2.8em; 
+	min-width: 1.8em; 
+	width: 5%; 
+}
+
+/* Publications section */
+.publication_row {
+	padding-top: 1em;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+}
+.publication_image {
+	float: left;
+	width: 30%;
+	margin: 0 5% 0 5% ;
+}
+
+.publication_image img {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	float: left; 
+	min-width: 12em; 
+	max-width: 20em;	
+	width: 100%;	
+	border-color: #6689a7;
+	border-width: thick;
+	border-style: hidden  hidden  hidden solid;
+
+}
+.publication_text {
+    float: left;
+	width: 60%;
+	font-size: 11pt;
+}
+
+.row {
+	padding-top: 5em;
+	width: 100%;
+
+}
+
+.column {
+    float: left;
+	width: 40%;
+	margin: 0 5% 0 5% ;
+}
+.left_column {
+    float: left;
+	width: 20%;
+	margin: 0 5% 0 2.0% ;
+}
+.right_column {
+    float: left;
+	width: 65%;
+	margin: 0 7.0% 0 1.0% ;
+	font-size: 11pt;
+}
+.right_column h3 {
+	color: #1f1d22; 
+}
+.right_column p {
+	color: #5c5d61; 
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.publication_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.right_content {
+	/*background-color: #905739; darker tan*/   /*A83733 redish*/
+	background-color: #274e6b; 			
+	color: white;
+	opacity: 0.90;
+
+	float: right;
+	margin-right: auto;
+	padding: 0.625em 1.25em 1.25em 1.25em; /*10 20 20 20*/
+}
+.right_content h3 {
+	text-align: center;
+}
+.right_content h4 {
+	text-align: center;
+}
+.center_cont  {
+	background-color: #274e6b;
+	color: #F0F8FF; /*white;*/
+	opacity: 0.95;
+	width: 100%;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2.25em 1.25em 4.6em 1.25em; /*10 20 20 20*/
+
+}
+.center_cont #mainh {
+	text-align: center;
+}
+#medium_padding {
+	margin-top: 8em;
+}
+#large_padding {
+	margin-top: 16em;
+}
+
+ footer {
+	font-weight: 300;
+	text-align: center;
+	background-color: #274e6b;
+	/*background-color: hsl(8, 70%, 54%);*/ /*wtf?*/
+	/*color: white;*/
+	padding-bottom: 12px;
+	padding-top: 12px;
+	/*position: fixed;*/
+	bottom: 0.5em;
+	width: 100%;
+}
+/* IMPORTANT IMPORTANT Media Queries! IMPORTANT IMPORTANT OH YEAH */
+
+
+/* Change if the viewport is 600px or wider */
+@media screen and (max-width: 900px) {
+	.container 	{			/*fabulous centers and constrains margin*/			
+				padding-top: 250px;
+				margin: auto;
+				max-width: 800px; 
+				
+				}
+	.left_column {
+					float: center;
+					width: 90%;
+					margin: 0 5% 0 5% ;
+				}
+	.right_column {
+					float: center;
+					width: 90%;
+					margin: 0 5% 0 5% ;
+				}				
+	#profile img{
+					max-width: 13em; 	
+					width: 100%;	
+				}
+	.publication_image img {
+					display: block; 
+					margin-left: auto; 
+					margin-right: auto; 
+					float: left; 
+					min-width: 6.5em; 
+					max-width: 12em;	
+					width: 100%;	
+					border-width: medium;
+				}
+			
+	footer {   /*I dont think this is needed anymore*/
+			position: fixed;
+			bottom: 0.5em;
+			width: 100%;
+	}	
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
