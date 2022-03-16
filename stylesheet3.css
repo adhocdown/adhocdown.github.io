@@ -11,16 +11,19 @@
 	WEB FUNDAMENTALS BY GOOGLE DEV		https://developers.google.com/web/fundamentals/?hl=en */
 
 html {
-	background-image: linear-gradient( 180deg, #ffffff,  #dadada);   
-	-webkit-background-size: cover;		/*conditional covers */
+	/*gradient background */
+	/*background-image: linear-gradient( 180deg, #ffffff,  #dadada);   */
+	/*conditional covers */
+	/*-webkit-background-size: cover;		
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	
-	font-family: Verdana, serif;
 	background-repeat: no-repeat;
-	background-position: center center;
-	
+	background-position: center center; */
+
+	font-family: 'Nunito', sans-serif;
+	background-color: #FFF;
 	/*sticky footer fix? */
 	min-height: 100%;
 	box-sizing: border-box;
@@ -37,19 +40,29 @@ html {
 }
 
 
-/*random text color change*/
+/*Text and line color change*/
+
 .highlight {
 	color: #274e6b;
 	font-weight: 500;
+	text-decoration:underline;
 	display: inline;
-
 }
+
+hr {height:0.5px;
+	border-width:0;
+	color: #e2e2e2;background-color:#e2e2e2;
+}
+
+
+
+
 
 /* Styling for the Nav Bar */
 .nav {
 	z-index: 9999;
 	width: 100%;	
-	background-color: #010427; 
+	background-color: #000000; /*#50738B;*/ 
 	opacity: 0.95;
 	position: fixed;
 }
@@ -57,7 +70,7 @@ html {
 	float: left; 
 	position: absolute; 
 	color: #fff;	
-	font-weight: 600; 
+	font-weight: 500; 
 	padding-left: 1em;
 }
 .nav ul {
@@ -82,11 +95,11 @@ html {
 a {
 	text-decoration: underline;
 	font-weight: 500;
-	color: #5c5d61; 
+	color: #7388c7; 
 	/*color: #905739;*/  /*#CCAB13   #A5FFC2*/
 }
 a:hover {
-    color: #6689a7;   /* #d1c8c0; */
+    color: #7388c7;   /* #d1c8c0; */
 }
 
 
@@ -102,13 +115,16 @@ a:hover {
 }
 #contact_info {
 	width: 100%;		  
+	font-size: 12pt;
+
 }
 #contact_info h3{
 	font-weight: 500; 
 	text-align: center;
+	color: #274e6b;
+	font-size: 20pt;
 }
 #contact_info p{
-	font-size: 11pt;
 	text-align: center;
 }
 #contact_info ul {
@@ -126,36 +142,33 @@ a:hover {
 	width: 5%; 
 }
 
+
 /* Publications section */
 .publication_row {
 	padding-top: 1em;
-	float: left;
 	margin-left: 0;
 	width: 100%;
 }
 .publication_image {
 	float: left;
-	width: 30%;
-	margin: 0 5% 0 5% ;
 }
 
 .publication_image img {
 	display: block; 
-	margin-left: auto; 
-	margin-right: auto; 
-	float: left; 
-	min-width: 12em; 
-	max-width: 20em;	
-	width: 100%;	
-	border-color: #6689a7;
+	margin-top: 1.2em; 
+	margin-right: 1em; 
+	min-width: 8em; /*12em*/
+	max-width: 16em; /*20em*/	
+	/*width: 100%;	*/
+	/*border-color: #6689a7;
 	border-width: thick;
-	border-style: hidden  hidden  hidden solid;
+	border-style: hidden  hidden  hidden hidden;*/
 
 }
 .publication_text {
     float: left;
 	width: 60%;
-	font-size: 11pt;
+	font-size: 12pt;
 }
 
 .row {
@@ -178,7 +191,7 @@ a:hover {
     float: left;
 	width: 65%;
 	margin: 0 7.0% 0 1.0% ;
-	font-size: 11pt;
+	font-size: 12pt;
 }
 .right_column h3 {
 	color: #1f1d22; 
@@ -260,28 +273,41 @@ a:hover {
 				
 				}
 	.left_column {
-					float: center;
 					width: 90%;
 					margin: 0 5% 0 5% ;
 				}
 	.right_column {
-					float: center;
 					width: 90%;
-					margin: 0 5% 0 5% ;
-				}				
+					margin: 0 0 0 5% ;
+				}	
+	/* Publications section */
+	.publication_row {
+					padding-top: 0;
+					margin-left: 0;
+					margin-right: 0;
+					width: 100%;
+				}	
+	.publication_image {
+					float: left;
+				}
+				
+	.publication_image img {
+				/*display: block; */
+				float: right;
+				width: 100%;
+				/*margin-top: 1.2em; 
+				margin-right: 1em; */
+				min-width: 8em; /*12em*/
+				max-width: 16em; /*20em*/					
+				}
+	.publication_text {
+				float: left;
+				width: 100%;
+				font-size: 12pt;
+				}						
 	#profile img{
 					max-width: 13em; 	
 					width: 100%;	
-				}
-	.publication_image img {
-					display: block; 
-					margin-left: auto; 
-					margin-right: auto; 
-					float: left; 
-					min-width: 6.5em; 
-					max-width: 12em;	
-					width: 100%;	
-					border-width: medium;
 				}
 			
 	footer {   /*I dont think this is needed anymore*/
