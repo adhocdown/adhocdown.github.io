@@ -73,34 +73,34 @@ hr {height:0.5px;
 
 
 /* Styling for the Nav Bar */
-.nav {
+nav {
 	z-index: 9999;
 	width: 100%;	
 	background-color: #000000; /*#50738B;*/ 
 	opacity: 0.95;
 	position: fixed;
 }
-.nav .navname {
+nav .navname {
 	float: left; 
 	position: absolute; 
 	color: #fff;	
 	font-weight: 500; 
 	padding-left: 1em;
 }
-.nav ul {
+nav ul {
 	text-align: right;
 }
-.nav ul li {
+nav ul li {
 	display: inline;
 	margin: 0 25px 0 0;
 	color: #fff;
 }
-.nav a {
+nav a {
 	text-decoration: none;
 	font-weight: 500; /*600*/
 	color: white;
 }
-.nav a:hover {
+nav a:hover {
     color: #6689a7; 
 }
 
@@ -118,7 +118,7 @@ a:hover {
 
 
 /* Profile section */
-#profile img{	
+.profile img{	
 	display: block; 
 	margin-left: auto; 
 	margin-right: auto; 
@@ -127,48 +127,58 @@ a:hover {
 	max-width: 17em;	
 	width: 100%;		  
 }
-#contact_info {
+.profile {
 	width: 100%;		  
 	font-size: 12pt;
 
 }
-#contact_info h3{
+.profile h1{
 	font-weight: 500; 
 	text-align: center;
 	color: #274e6b;
 	font-size: 20pt;
+	padding-top: 8px;
+	padding-bottom: 8px;
 }
-#contact_info p{
+.profile p{
 	margin-top: -0.5em; 
 	text-align: center;
 }
-#contact_info ul {
+.profile ul {
 	margin-left: 0; 
 	margin-right: 3em; 	 
 	text-align: center;
+	overflow: hidden;
+
 }
-#contact_info ul li {
-	display: inline;	
-	margin: 0 0px 0 0;
+.profile ul li {
+	display: inline-block;	
+	margin-left: -6px;
+	margin-right: -6px;
 }
-#contact_info ul li img {
+.profile ul li img {
 	max-width: 2.8em; 
 	min-width: 1.8em; 
 	width: 5%; 
 }
 
+/* Publications section */
+.news p {	 
+	margin-bottom: -1.0em; 
+}
+
 
 /* Publications section */
-.publication_row {
+.publication {
 	padding-top: 1em;
 	margin-left: 0;
 	width: 100%;
 }
-.publication_image {
+.publication_left {
 	float: left;
 }
 
-.publication_image img {
+.publication_left img {
 	display: block; 
 	margin-top: 1.2em; 
 	margin-right: 1em; 
@@ -180,62 +190,64 @@ a:hover {
 	border-style: hidden  hidden  hidden hidden;*/
 
 }
-.publication_text {
+.publication_right {
     float: left;
 	width: 60%;
 	font-size: 12pt;
 }
 
-.row {
+main {
 	padding-top: 5em;
 	width: 100%;
 
 }
 
-.column {
-    float: left;
-	width: 40%;
-	margin: 0 5% 0 5% ;
-}
-.left_column {
+
+.profile {
     float: left;
 	width: 20%;
 	margin: 0 5% 0 2.0% ;
 }
-.right_column {
-    float: left;
+
+article {
+    float: right;
 	width: 65%;
-	margin: 0 7.0% 0 1.0% ;
+	margin: 0 7.0% 1.0% 1.0% ;
 	font-size: 12pt;
 }
-.right_column h3 {
+article h2 {
 	color: #1f1d22; 
 }
-.right_column p {
+article h3 {
+	font-size: 12pt;
+	color: #5c5d61; 
+	margin-bottom: -8pt;	
+}
+article p {
 	color: #5c5d61; 
 }
 
 /* Clear floats after the columns */
-.row:after {
+main:after {
     content: "";
     display: table;
     clear: both;
 }
-.publication_row:after {
+.publication:after {
     content: "";
     display: table;
     clear: both;
 }
 
+/* Retired CSS that I keep for posterity's sake */
 .right_content {
-	/*background-color: #905739; darker tan*/   /*A83733 redish*/
 	background-color: #274e6b; 			
 	color: white;
 	opacity: 0.90;
 
 	float: right;
 	margin-right: auto;
-	padding: 0.625em 1.25em 1.25em 1.25em; /*10 20 20 20*/
+	padding: 0.625em 1.25em 1.25em 1.25em; 
 }
 .right_content h3 {
 	text-align: center;
@@ -245,13 +257,13 @@ a:hover {
 }
 .center_cont  {
 	background-color: #274e6b;
-	color: #F0F8FF; /*white;*/
+	color: #F0F8FF; 
 	opacity: 0.95;
 	width: 100%;
 	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 2.25em 1.25em 4.6em 1.25em; /*10 20 20 20*/
+	padding: 2.25em 1.25em 4.6em 1.25em; 
 
 }
 .center_cont #mainh {
@@ -268,16 +280,15 @@ a:hover {
 	font-weight: 300;
 	text-align: center;
 	background-color: #274e6b;
-	/*background-color: hsl(8, 70%, 54%);*/ /*wtf?*/
-	/*color: white;*/
 	padding-bottom: 12px;
 	padding-top: 12px;
-	/*position: fixed;*/
 	bottom: 0.5em;
 	width: 100%;
 }
-/* IMPORTANT IMPORTANT Media Queries! IMPORTANT IMPORTANT OH YEAH */
+/* END of Retired CSS */
 
+
+/* IMPORTANT IMPORTANT Media Queries! IMPORTANT IMPORTANT OH YEAH */
 
 /* Change if the viewport is 900px or wider */
 @media screen and (max-width: 900px) {
@@ -291,32 +302,34 @@ a:hover {
 	#about 		{
 		padding-bottom: 50px;
 				}
-	.nav ul li 	{
+	nav ul li 	{
 		display: inline-block;
 		width: 100px; 
 		margin: 0 25px 0 0;		
 				}
 
-	.left_column {
+	.profile {
 					width: 90%;
 					margin: 0 5% 0 5% ;
 				}
-	.right_column {
+	article {
+					float:center;
 					width: 90%;
-					margin: 0 0 0 5% ;
+					margin-left: 0;
+					margin-right: 3%;				
 				}	
 	/* Publications section */
-	.publication_row {
+	.publication {
 					padding-top: 0;
 					margin-left: 0;
 					margin-right: 0;
 					width: 100%;
 				}	
-	.publication_image {
+	.publication_left {
 					float: left;
 				}
 				
-	.publication_image img {
+	.publication_left img {
 				/*display: block; */
 				float: right;
 				width: 100%;
@@ -325,12 +338,12 @@ a:hover {
 				min-width: 8em; /*12em*/
 				max-width: 16em; /*20em*/					
 				}
-	.publication_text {
+	.publication_right {
 				float: left;
 				width: 100%;
 				font-size: 12pt;
 				}						
-	#profile img{
+	.profile img{
 					max-width: 13em; 	
 					width: 100%;	
 				}
