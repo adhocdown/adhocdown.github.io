@@ -89,6 +89,7 @@ nav .navname {
 }
 nav ul {
 	text-align: right;
+	margin-left: 10%;
 }
 nav ul li {
 	display: inline;
