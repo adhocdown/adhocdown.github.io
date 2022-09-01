@@ -260,14 +260,17 @@ main:after {
 	nav 		{
 		font-size: 14pt; 
 				}
+	nav .navname {	
+		display: none;
+	}				
 	nav ul 		{
-		padding-right: 50px; 
+		padding-right: 40px; 
 				}
 	nav ul li 	{
 		display: inline-block;
 		text-align: right; 
-		width: 80px; 
-		margin: 0 0 0 50px;		
+		/*width: 80px; */
+		margin: 0 0 0 30px;		
 				}
 
 	.profile 	{	
