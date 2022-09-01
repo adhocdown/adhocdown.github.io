@@ -263,14 +263,9 @@ main:after {
 	nav .navname {	
 		display: none;
 	}				
-	nav ul 		{
-		padding-right: 40px; 
-				}
 	nav ul li 	{
 		display: inline-block;
-		text-align: right; 
-		/*width: 80px; */
-		margin: 0 0 0 30px;		
+		text-align: right; 	
 				}
 
 	.profile 	{	
