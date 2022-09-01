@@ -133,7 +133,7 @@ a:hover {
 	font-size: 12pt;
 
 }
-.profile h1{
+.profile h1 {
 	font-weight: 500; 
 	text-align: center;
 	color: #274e6b;
@@ -141,7 +141,7 @@ a:hover {
 	padding-top: 8px;
 	padding-bottom: 8px;
 }
-.profile p{
+.profile p {
 	margin-top: -0.5em; 
 	text-align: center;
 }
@@ -240,53 +240,6 @@ main:after {
     clear: both;
 }
 
-/* Retired CSS that I keep for posterity's sake */
-.right_content {
-	background-color: #274e6b; 			
-	color: white;
-	opacity: 0.90;
-
-	float: right;
-	margin-right: auto;
-	padding: 0.625em 1.25em 1.25em 1.25em; 
-}
-.right_content h3 {
-	text-align: center;
-}
-.right_content h4 {
-	text-align: center;
-}
-.center_cont  {
-	background-color: #274e6b;
-	color: #F0F8FF; 
-	opacity: 0.95;
-	width: 100%;
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 2.25em 1.25em 4.6em 1.25em; 
-
-}
-.center_cont #mainh {
-	text-align: center;
-}
-#medium_padding {
-	margin-top: 8em;
-}
-#large_padding {
-	margin-top: 16em;
-}
-
- footer {
-	font-weight: 300;
-	text-align: center;
-	background-color: #274e6b;
-	padding-bottom: 12px;
-	padding-top: 12px;
-	bottom: 0.5em;
-	width: 100%;
-}
-/* END of Retired CSS */
 
 
 /* IMPORTANT IMPORTANT Media Queries! IMPORTANT IMPORTANT OH YEAH */

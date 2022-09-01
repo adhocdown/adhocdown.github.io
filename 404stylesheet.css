@@ -1,0 +1,66 @@
+/*  
+*   Custom 404 page stylesheet
+*   
+*   
+*/
+
+html {
+	font-family: 'Nunito', sans-serif;
+	background-color: #FFF;
+	/*sticky footer fix? */
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+
+/* Styling for the Nav Bar */
+nav {
+	z-index: 9999;
+	width: 100%;	
+	background-color: #000000; /*#50738B;*/ 
+	opacity: 0.95;
+	position: fixed;
+}
+nav .navname {
+	float: left; 
+	position: absolute; 
+	color: #fff;	
+	font-weight: 500; 
+	padding-left: 1em;
+}
+
+main {
+    padding-top: 25em;
+    justify-content: center;
+    align-items: center; 
+}
+
+h1 {	 
+	font-weight: 600; 
+	text-align: center;
+	color: #274e6b;
+	font-size: 42pt;
+}
+
+h2 {
+	/*margin-top: 10em; */  
+	text-align: center;
+}
+
+button {
+    /*margin-top: 6em; */  
+	font-size: 14pt;
+    background-color: #274e6b;
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;    
+  }
+button:hover {
+    background-color: #5a6ca1;   /* #d1c8c0; */
+}
+
+
+
