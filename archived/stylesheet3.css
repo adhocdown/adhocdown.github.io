@@ -1,0 +1,324 @@
+/* 	Best Practice For Later:
+/ 	*CSS Reset for safety reasons   -----> Normalize.css may be a better alt ((Pure. Base))
+/	*Optimize your images!! -try Smush It-
+/	*Use conditional comments (for browser variation)
+/	*Place JS file at bottom
+/	*test different browsers as you build
+/	*Dont use @import, bc it's slow
+*/
+
+/*	CHECK THIS OUT:: 
+	WEB FUNDAMENTALS BY GOOGLE DEV		https://developers.google.com/web/fundamentals/?hl=en */
+
+html {
+	font-family: 'Nunito', sans-serif;
+	background-color: #FFF;
+	/*sticky footer fix? */
+	min-height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {		/*solves for inheritance!*/
+  box-sizing: inherit;
+}
+
+/* Prevent content from getting clipped at top or bottom */
+.container {
+	padding-top: 9em; 
+	padding-bottom: 9em;
+}
+
+/* For more flexible spacing and tabs with paragraph elements */
+/* Example use: <span class="tab1"> */ 
+.tab2 {
+	padding-left: 2px;
+}
+.tab4 {
+	padding-left: 4px;
+}
+.tab6 {
+	padding-left: 6px;
+}
+.tab7 {
+	padding-left: 7px;
+}
+.tab8 {
+	padding-left: 8px;
+}
+.tab9 {
+	padding-left: 9px;
+}
+.tab10 {
+	padding-left: 10px;
+}
+.tab12 {
+	padding-left: 12px;
+}
+
+
+/*Text and line color change*/
+
+.highlight {
+	color: #274e6b;
+	font-weight: 500;
+	text-decoration:underline;
+	display: inline;
+}
+
+hr {height:0.5px;
+	border-width:0;
+	color: #e2e2e2;background-color:#e2e2e2;
+}
+
+.announce {
+	color: #274e6b;	
+}
+
+
+
+
+
+/* Styling for the Nav Bar */
+nav {
+	z-index: 9999;
+	width: 100%;	
+	background-color: #000000; /*#50738B;*/ 
+	opacity: 0.95;
+	position: fixed;
+}
+nav .navname {
+	float: left; 
+	position: absolute; 
+	color: #fff;	
+	font-weight: 500; 
+	padding-left: 1em;
+}
+nav ul {
+	text-align: right;
+	margin-left: 10%;
+}
+nav ul li {
+	display: inline;
+	margin: 0 25px 0 0;
+	color: #fff;
+}
+nav a {
+	text-decoration: none;
+	font-weight: 500; /*600*/
+	color: white;
+}
+nav a:hover {
+    color: #6689a7; 
+}
+
+
+/* Handle general hyperlinks */
+a {
+	text-decoration: underline;
+	font-weight: 500;
+	color: #5a6ca1; 
+	/*color: #905739;*/  /*#7388c7   #274e6b*/
+}
+a:hover {
+    color: #5a6ca1;   /* #d1c8c0; */
+}
+
+
+/* Profile section */
+.profile img{	
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto; 
+	float: center; 
+	min-width: 13em; 
+	max-width: 17em;	
+	width: 100%;		  
+}
+.profile {
+	width: 100%;		  
+	font-size: 12pt;
+
+}
+.profile h1 {
+	font-weight: 500; 
+	text-align: center;
+	color: #274e6b;
+	font-size: 20pt;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.profile p {
+	margin-top: -0.5em; 
+	text-align: center;
+}
+.profile ul {
+	margin-left: 0; 
+	margin-right: 3em; 	 
+	text-align: center;
+	overflow: hidden;
+
+}
+.profile ul li {
+	display: inline-block;	
+	margin-left: -6px;
+	margin-right: -6px;
+}
+.profile ul li img {
+	max-width: 2.8em; 
+	min-width: 1.8em; 
+	width: 5%; 
+}
+
+/* Publications section */
+.news p {	 
+	margin-bottom: -1.0em; 
+}
+
+
+/* Publications section */
+.publication {
+	padding-top: 1em;
+	margin-left: 0;
+	width: 100%;
+}
+.publication_left {
+	float: left;
+}
+
+.publication_left img {
+	display: block; 
+	margin-top: 1.2em; 
+	margin-right: 1em; 
+	min-width: 8em; /*12em*/
+	max-width: 16em; /*20em*/	
+	/*width: 100%;	*/
+	/*border-color: #6689a7;
+	border-width: thick;
+	border-style: hidden  hidden  hidden hidden;*/
+
+}
+.publication_right {
+    float: left;
+	width: 60%;
+	font-size: 12pt;
+}
+
+main {
+	padding-top: 5em;
+	width: 100%;
+}
+
+
+.profile {
+    float: left;
+	width: 20%;
+	margin: 0 5% 0 2.0% ;
+}
+
+article {
+    float: right;
+	width: 65%;
+	margin: 0 7.0% 1.0% 1.0% ;
+	font-size: 12pt;
+}
+article h2 {
+	color: #1f1d22; 
+}
+article h3 {
+	font-size: 12pt;
+	color: #5c5d61; 
+	margin-bottom: -8pt;	
+}
+article p {
+	color: #5c5d61; 
+}
+
+/* Clear floats after the columns */
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.publication:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* IMPORTANT IMPORTANT Media Queries! IMPORTANT IMPORTANT OH YEAH */
+
+/* Change if the viewport is 900px or smaller */
+@media screen and (max-width: 900px) {
+	.container 	{			/*fabulous centers and constrains margin*/			
+				padding-top: 250px;
+				margin: auto;
+				max-width: 800px; 				
+				}
+
+	/* Increase font size to 16pt for mobile accessibility*/ 
+	/* Adjust nav bar to collapse when screen is small. move about section lower to compensate */
+	#about 		{
+		padding-bottom: 50px;
+				}
+	nav 		{
+		font-size: 14pt; 
+				}
+	nav .navname {	
+		display: none;
+	}				
+	nav ul li 	{
+		display: inline-block;
+		text-align: right; 	
+				}
+
+	.profile 	{	
+					font-size: 14pt;
+					width: 90%;
+					margin: 0 5% 0 5% ;
+				}
+	article 	{
+					font-size: 14pt;
+					float:center;
+					width: 90%;
+					margin-left: 0;
+					margin-right: 3%;				
+				}	
+	/* Publications section */
+	.publication {
+					font-size: 14pt;
+					padding-top: 0;
+					margin-left: 0;
+					margin-right: 0;
+					width: 100%;
+				}	
+	.publication_left {
+					float: left;
+				}
+				
+	.publication_left img {
+				/*display: block; */
+				float: right;
+				width: 100%;
+				/*margin-top: 1.2em; 
+				margin-right: 1em; */
+				min-width: 8em; /*12em*/
+				max-width: 16em; /*20em*/					
+				}
+	.publication_right {
+				font-size: 14pt;
+				float: left;
+				width: 100%;
+				}						
+	.profile img{
+					max-width: 13em; 	
+					width: 100%;	
+				}
+			
+	footer {   /*I dont think this is needed anymore*/
+			position: fixed;
+			bottom: 0.5em;
+			width: 100%;
+	}	
+}
