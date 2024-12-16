@@ -257,13 +257,13 @@ main:after {
 				max-width: 800px; 				
 				}
 
-	/* Increase font size to 16pt for mobile accessibility*/ 
+	/* Should increase font size to 16pt for mobile accessibility*/ 
 	/* Adjust nav bar to collapse when screen is small. move about section lower to compensate */
 	#about 		{
 		padding-bottom: 50px;
 				}
 	nav 		{
-		font-size: 14pt; 
+		font-size: 12pt; 
 				}
 	nav .navname {	
 		display: none;
@@ -274,12 +274,12 @@ main:after {
 				}
 
 	.profile 	{	
-					font-size: 14pt;
+					font-size: 12pt;
 					width: 90%;
 					margin: 0 5% 0 5% ;
 				}
 	article 	{
-					font-size: 14pt;
+					font-size: 12pt;
 					float:center;
 					width: 90%;
 					margin-left: 0;
@@ -287,7 +287,7 @@ main:after {
 				}	
 	/* Publications section */
 	.publication {
-					font-size: 14pt;
+					font-size: 12pt;
 					padding-top: 0;
 					margin-left: 0;
 					margin-right: 0;
@@ -307,7 +307,7 @@ main:after {
 				max-width: 16em; /*20em*/					
 				}
 	.publication_right {
-				font-size: 14pt;
+				font-size: 12pt;
 				float: left;
 				width: 100%;
 				}						
