@@ -19,26 +19,28 @@
 	<!-- Style Sheets -->
 	<link rel="stylesheet" href="stylesheet.css">
 	<!-- Title  	 -->
-	<title>Haley Adams' Publications</title>
+	<title>Haley Adams - Publications</title>
 </head>
 
 <body> 
-	<!-- Navigation Bar  -->
+
+	<!-- Nav Bar -->
 	<nav>
 		<div class="navname"><p>Haley's Commit</p></div>		
 		<ul>
-			<li><a href="index.html#about">About</a></li>
+			<li><a href="index.html">About</a></li>
+			<!-- <li><a href="projects.html">Projects</a></li> -->
 			<li><a href="publications.html">Publications</a></li>
-			<li><a href="index.html#projects">Projects</a></li>
+			<!-- <li><a href="blog.html">Blog</a></li> --> 
 		</ul>				
-	</nav>
+	</nav> <!-- Nav -->
 	
 	<main>		
 
-		<!-- Profile Section (Image, Name, Contact Info, Links) -->
+		<!-- Profile Section -->
 		<div class = "profile", role="profile">
 			<img src="img/Haley_2024.jpg" alt="A headshot of Haley Adams, the creator of the website. She has long brown hair and a big grin.">	
-			<h1>Haley Adams, PhD</h1>
+			<h2>Haley Adams, PhD</h2>
 			<p>Google <br> 
 				California, USA <br>  
 				haley.xr.adams@gmail.com</p>
@@ -49,19 +51,20 @@
 				<li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>					
 				<li><a href="https://twitter.com/adhocdown"><img src="img/icon_twitter.png" alt="Twitter icon. "></a></li>
 			</ul>			
-		</div>  <!-- end profile section -->
+		</div>   <!-- Profile -->
 
-    <article>
-		<h2>Publications</h2>
+    <section>
+		<h1>Publications</h1>
 		<p>	Publications are grouped by section:&nbsp; <a href="#thesis"> Dissertation</a>,&nbsp; <a href="#proceedings"> Journal & Conference Proceedings</a>,&nbsp; or&nbsp; <a href="#presentations"> Presentations</a>. 
 		</p>
-	</article>	
+	</section>	
 
 
-    <!-- Publications Section -->
-		<article>
+    <!-- PhD Thesis Section -->
+		<section>
 			<div id = "thesis"></div> <!-- Tag for navigatiion-->								
 			<h2>PhD Dissertation</h2>
+			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2024_Adams_PhDDissertation.PNG" alt="Two augmented reality head-mounted displays are shown: the Varjo XR-3 (a video see-through display) and the Microsoft HoloLens 2 (an optical see-through display).">
@@ -77,37 +80,35 @@
 					</p>
 				</div>
 			</div>
-			<hr>  
 			<br>
-		</article>
+		</section> <!-- PhD Thesis -->
 
 		<!-- Some Publications Section -->
-		<article>
+		<section>
 			<div id = "proceedings"></div> <!-- Tag for navigatiion-->								
 			<h2>Journal & Conference Proceedings</h2>
-
+			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2023_Bodenheimer_SAP.png" alt="Two pairs of gray spheres are shown. The two on the left are rendered with shadows; the two on the right are rendered wit glowing rings underneath them. For each pair, the left sphere is on the ground and the right sphere is floating above the ground.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Perceiving Absolute Distance in Augmented Reality Displays with Realistic and Non-realistic Shadows</strong> <br>
-					Bobby Bodenheimer, <span class="highlight">Haley Adams</span>, Mirinda Whitaker, Jeanine Stefanucci, and Sarah Creem-Regehr <br>
-					ACM Symposium on Applied Perception (SAP) 2022 <br>
+					Bobby Bodenheimer, <span class="highlight">Haley Adams</span>, Mirinda Whitaker, Jeanine Stefanucci, Sarah Creem-Regehr <br>
+					ACM Symposium on Applied Perception (SAP) 2023 <br>
 					[ <a href="https://doi.org/10.1145/3385955.3407938">doi</a> ] &nbsp;
 					[ <a href="docs/2023_Bodenheimer_SAP_Nonrealistic.pdf">pdf</a> ] &nbsp;
 					<!-- pdf video, slides, project page--> 
 					</p>
 				</div>
 			</div>  
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2022_Adams_Depth.png" alt="Two augmented reality head-mounted displays are shown: the Varjo XR-3 (a video see-through display) and the Microsoft HoloLens 2 (an optical see-through display).">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Depth Perception in Augmented Reality: The Effects of Display, Shadow, and Position</strong> <br>
-					<span class="highlight">Haley Adams</span>, Jeanine Stefanucci, Sarah Creem-Regehr, and Bobby Bodenheimer <br>
+					<span class="highlight">Haley Adams</span>, Jeanine Stefanucci, Sarah Creem-Regehr, Bobby Bodenheimer <br>
 					IEEE VR 2022 <br>
 					[ <a href="https://doi.org/10.1109/VR51125.2022.00101">doi</a> ] &nbsp;
 					[ <a href="docs/2022_Adams_IEEEVR_Depth.pdf">pdf</a> ] &nbsp;
@@ -116,14 +117,13 @@
 					</p>
 				</div>
 			</div>  
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2021_Adams_Shadows2.png" alt="A virtual wooden box sits on top of a table nearby. There is no cast shadow rendered beneath it.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Shedding Light on Cast Shadows: An Investigation of Perceived Ground Contact in AR and VR</strong> <br>
-					<span class="highlight">Haley Adams</span>, Jeanine Stefanucci, Sarah Creem-Regehr, Grant Pointon, William Thompson, and Bobby Bodenheimer <br>
+					<span class="highlight">Haley Adams</span>, Jeanine Stefanucci, Sarah Creem-Regehr, Grant Pointon, William Thompson, Bobby Bodenheimer <br>
 					TVCG 2021 <br> 
 					[ <a href="https://doi.org/10.1109/TVCG.2021.3097978">doi</a> ] &nbsp;
 					[ <a href="docs/2021_Adams_TVCG_Shadows.pdf">pdf</a> ] &nbsp;
@@ -132,14 +132,13 @@
 					</p>
 				</div>
 			</div> 
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2020_Narasimham_SAP_Height.PNG" alt="Two virtual environments are shown. Both are stairwells with objects strewn about. In the left image, objects are all positioned at eye height. In the right image, objects are positioned at, below, and above eye height.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Encoding Height: Egocentric Spatial Memory of Adults and Teens in a Virtual Stairwell</strong> <br>
-					Gayathri Narasimham, <span class="highlight">Haley Adams</span>, John Rieser, and Bobby Bodenheimer <br>
+					Gayathri Narasimham, <span class="highlight">Haley Adams</span>, John Rieser, Bobby Bodenheimer <br>
 					ACM Symposium on Applied Perception (SAP) 2020 <br>
 					[ <a href="https://doi.org/10.1145/3385955.3407938">doi</a> ] &nbsp;				
 					[ <a href="docs/2020_Narasimham_SAP_Height.pdf">pdf</a> ] &nbsp;
@@ -147,14 +146,13 @@
 					</p>
 				</div> 
 			</div> 
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2019_Wu_Gaps.png" alt="A woman stands at the edge of three virtual gaps presented by the Microsoft HoloLens. The leftmost gap is 0.25m deep. The center gap is 1.0m deep. And the third gap is 1.5m deep.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Danger from the Deep: A Gap Affordance Study in Augmented Reality</strong> <br>
-					Hansen Wu, <span class="highlight">Haley Adams</span>, Grant Pointon, Jeanine Stefanucci, Sarah Creem-Regehr, and Bobby Bodenheimer <br>
+					Hansen Wu, <span class="highlight">Haley Adams</span>, Grant Pointon, Jeanine Stefanucci, Sarah Creem-Regehr, Bobby Bodenheimer <br>
 					IEEE VR 2019 Workshop on Perceptual and Cognitive Issues in AR (PERCAR) <br>
 					[ <a href="https://doi.org/10.1109/VR.2019.8797965">doi</a> ] &nbsp;				
 					[ <a href="docs/2019_Wu_PERCAR_Gap_Affordance.pdf">pdf</a> ] &nbsp;
@@ -163,14 +161,13 @@
 					</p>
 				</div> 
 			</div> 
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2019_Salas.png" alt="A woman with brown hair is wearing a HoloLens 1 display. She faces away from the camera towards an empty classroom with chairs along the walls. An offwhite virtual cube is superimposed on the ground in front of her.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Distance Judgments to On- and Off-Ground Objects in Augmented Reality</strong> <br>
-					Carlos Salas Rosales, Grant Pointon, <span class="highlight">Haley Adams</span>, Jeanine Stefanucci, Sarah Creem-Regehr, William B. Thompson, and Bobby Bodenheimer <br>
+					Carlos Salas Rosales, Grant Pointon, <span class="highlight">Haley Adams</span>, Jeanine Stefanucci, Sarah Creem-Regehr, William B. Thompson, Bobby Bodenheimer <br>
 					IEEE VR 2019 <br>						
 					[ <a href="https://doi.org/10.1109/VR.2019.8798095">doi</a> ] &nbsp;
 					[ <a href="docs/2019_Salas_Rosales_IEEEVR_Distance.pdf">pdf</a> ] &nbsp;
@@ -179,14 +176,13 @@
 					</p>
 				</div>
 			</div>	
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left"> 
 					<img src="img/2020_Hanson_WIP.png" alt="Illustration of the CNN architecture used for walking in place activity detection. Our method uses a sequence of IMU data as input for the network, which is trained to recognize walking and standing actions.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Improving Walking in Place Methods with Individualization and DeepNetworks</strong> <br>
-					Sara Hanson, Richard A. Paris, <span class="highlight">Haley Adams</span>, and Bobby Bodenheimer <br>
+					Sara Hanson, Richard A. Paris, <span class="highlight">Haley Adams</span>, Bobby Bodenheimer <br>
 					IEEE VR 2019 <br>
 					[ <a href="https://doi.org/10.1109/VR.2019.8797751">doi</a> ] &nbsp;
 					[ <a href="docs/2019_Hanson_IEEEVR_Walking_In_Place.pdf">pdf</a> ] &nbsp;
@@ -195,14 +191,13 @@
 					</p>
 				</div>
 			</div> 
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2019_Adams_Ear.png" alt="A screenshot of a VR user pointing to an ear structure within a semi-transparent 3d model of the human skull. A CT scan of the skull is shown on the wall.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Development and Evaluation of an Immersive Virtual Reality System for Medical Imaging of the Ear</strong> <br>
-					<span class="highlight">Haley Adams</span>, Justin Shinn, William G Morrel, Jack Noble, and Bobby Bodenheimer <br>
+					<span class="highlight">Haley Adams</span>, Justin Shinn, William G Morrel, Jack Noble, Bobby Bodenheimer <br>
 					SPIE: Image-Guided Procedures, Robotic Interventions, and Modeling 2019 <br>
 					[ <a href="https://doi.org/10.1117/12.2506178">doi</a> ] &nbsp;
 					[ <a href="docs/2019_Adams_SPIE_Ear_Visualization.pdf">pdf</a> ] &nbsp;
@@ -211,14 +206,13 @@
 					</p>
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2018_Asjad_Stairs.png" alt="A picture of a person walking on wooden slats while wearing an HTC Vive head-mounted display">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Perception of Height in Virtual Reality -- A Study of Climbing Stairs</strong> <br>
-					Noorin Asjad, <span class="highlight">Haley Adams</span>, Richard Paris, and Bobby Bodenheimer <br>
+					Noorin Asjad, <span class="highlight">Haley Adams</span>, Richard Paris, Bobby Bodenheimer <br>
 					ACM Symposium on Applied Perception (SAP) 2018 <br>
 					[ <a href="https://doi.org/10.1145/3225153.3225171">doi</a> ] &nbsp;
 					[ <a href="docs/2018_Asjad_ACMSAP_Climbing_Stairs.pdf">pdf</a> ] &nbsp;
@@ -226,14 +220,13 @@
 					</p>
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2018_Adams_Kids.png" alt="A young child tosses an HTC Vive controller to an experimenter who is posed to catch it. An inflatible air mattress and tiled foam squares are on the ground to protect the equipment from errant tosses.">
 				</div>
 				<div class = "publication_right">
 					<p> <strong>Locomotive and Prism Recalibration of Children and Teens in Immersive Virtual Environments. </strong> <br>
-					<span class="highlight">Haley Adams</span>, Gayathri Narasimham, John Rieser, Sarah Creem-Regehr, Jeanine Stefanucci, and Bobby Bodenheimer <br>
+					<span class="highlight">Haley Adams</span>, Gayathri Narasimham, John Rieser, Sarah Creem-Regehr, Jeanine Stefanucci, Bobby Bodenheimer <br>
 					IEEE VR 2018 (TVCG) <br>
 					[ <a href="https://doi.org/10.1109/TVCG.2018.2794072">doi</a> ]	&nbsp;				
 					[ <a href="docs/2018_Adams_IEEEVR_Recalibration.pdf">pdf</a> ]  &nbsp;
@@ -242,35 +235,32 @@
 				</p>		
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2018_Wu_Audio.png" alt="A birds-eye view of the virtual environment is presented. A roundabout is displayed in which three cars are circulating. Sparse trees and buildings populate the area around the traffic circle ">
 				</div>
 				<div class = "publication_right">						
 						<p> <strong>3D Sound Rendering in a Virtual Environment to Evaluate Pedestrian Street Crossing Decisions at a Roundabout. </strong> <br>
-							Haojie Wu, Daniel Ashmead, <span class="highlight">Haley Adams</span>, and Bobby Bodenheimer <br>
+							Haojie Wu, Daniel Ashmead, <span class="highlight">Haley Adams</span>, Bobby Bodenheimer <br>
 							IEEE VR Workshop on Sonic Interactions for Virtual Environments (SIVE) 2018 <br>
 							[ <a href="https://doi.org/10.1109/SIVE.2018.8577195">doi</a> ] &nbsp;
 							[ <a href="docs/2017_Haojie_SIVE_Roundabout.pdf">pdf</a> ]  &nbsp;
 						</p>			
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2018_Wu_Vision.png" alt="A central scotoma is simulated using a radial opacity and blur field at the center of the screen. The dark opacity is circumscribed by the blur field. The view of two cars in a virtual environment roundabout are obscured.">
 				</div>
 				<div class = "publication_right">	
 					<p> <strong> Using Virtual Reality to Assess the Street Crossing Behavior of Pedestrians with Simulated Macular Degeneration at a Roundabout</strong> <br>
-						Haojie Wu, Daniel Ashmead, <span class="highlight">Haley Adams</span>, and Bobby Bodenheimer <br>
+						Haojie Wu, Daniel Ashmead, <span class="highlight">Haley Adams</span>, Bobby Bodenheimer <br>
 						Frontiers in Virtual Environments 2018 <br>
 						[ <a href="https://doi.org/10.3389/fict.2018.00027">doi</a> ] &nbsp;
 						[ <a href="docs/2017_Haojie_Frontiers_Macular_Degeneration.pdf">pdf</a> ] &nbsp;
 					</p>	
 				</div>
 			</div>		
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2018_Chipman_CCSC_Education.png" alt="Female middle and high school students crowd around a 3D printer, which is supervised by an undergraduate camp counselor. ">
@@ -284,58 +274,41 @@
 					</p>					
 				</div>
 			</div>
-			<hr>
-			<div class = "publication">
-				<div class = "publication_left">
-					<img src="img/2016_Cannon_Education.png" alt="Three middle school girls stand with their arms across each other's shoulders and with their backs facing the camera. They are wearing bright blue camp shirts with 'Camp Codette' on the back.">
-				</div>
-				<div class = "publication_right">							
-					<p> <strong> igniteCS: Addressing Undergraduate CS Retention</strong> <br>
-						Erin Mindell Cannon, Priya Chawla, Katherine Lo, and <span class="highlight">Haley Adams</span> <br>
-						ACM Technical Symposium on Computer Science Education (SIGCSE) 2016 <br>
-						[ <a href="https://doi.org/10.1145/2839509.2844658">doi</a> ] &nbsp;
-						[ <a href="docs/2016_Cannon_SIGCSE_igniteCS.pdf">pdf</a> ]  &nbsp;
-					</p>					
-				</div>
-			</div>
-			<hr>	
 			<br>
-		</article>		
+		</section>	<!-- Publications -->	
 
 
-
-		<article>
+		<!-- Presentations Section -->
+		<section>
 			<br>
 			<div id = "presentations"></div> <!-- Tag for navigatiion-->								
 			<h2>Presentations</h2>
-				
+			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2022_Adams_PERCXR.PNG" alt="An image with two, floating spheres above a granite surface are shown. They have a faded white highlight beneath them instead of a shadow..">
 				</div>
 				<div class = "publication_right">							
-					<p> <strong>Depth perception and Stylized Graphics in AR HMDs</strong> <br>
+					<p> <strong>Depth Perception and Stylized Graphics in AR HMDs</strong> <br>
 						<span class="highlight">Haley Adams</span><br>
 						IEEE ISMAR Workshop on Perceptual and Cognitive Issues in AR (PERCxR) 2022 <br>
 						[ <a href="https://www.percxr.com/invited-talks">PERCxR</a> ] &nbsp;
 					</p>					
 				</div>
 			</div> 
-			<hr>	
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2022_XRAccess.PNG" alt="The logo for XR Access is shown. A stick person is surrounded by circular, directional arrows.">
 				</div>
 				<div class = "publication_right">							
 					<p> <strong>Research to Practice in XR Accessibility</strong> <br>
-						Ricardo Gonzalez, Raja Kushalnagar, Steven Feiner, and <span class="highlight">Haley Adams</span><br>
+						Ricardo Gonzalez, Raja Kushalnagar, Steven Feiner, <span class="highlight">Haley Adams</span><br>
 						XR Access Symposium 2022 <br>
 						[ <a href="https://xraccess.org/">XRAccess</a> ] &nbsp;
 						[ <a href="https://www.youtube.com/watch?v=ZG0w6l4qRr4">video</a> ] &nbsp;
 					</p>					
 				</div>
 			</div> 
-			<hr>				
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2022_Bodenheimer_VSS.png" alt="A virtual environment with two white, anthropromorphic robots. Wooden birdhouses are scattered around them in an open field at night.">
@@ -349,10 +322,9 @@
 					</p>					
 				</div>
 			</div> 
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
-					<img src="img/2020_Adams_Hi5Seminar.png" alt="The Hi5 Lab banner is shown along with the text 'High Fidelity' Lab. The logo text is a bright green.">
+					<img style="border-style: solid; border-width: 1px 0px 1px 0px; border-color: #77a848;" src="img/2020_Adams_Hi5Seminar.png" alt="The Hi5 Lab banner is shown along with the text 'High Fidelity' Lab. The logo text is a bright green.">
 				</div>
 				<div class = "publication_right">							
 					<p> <strong> A Strange View: Using Perception to Improve XR</strong> <br>
@@ -363,7 +335,6 @@
 					</p>					
 				</div>
 			</div> 
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2020_Adams_IEEEVR_DC.png" alt="Transluscent soccer balls are shown on top of a black and white tiled tablecloth. The left soccreball is rendered without a shadow; the right soccerball with a shadow.">
@@ -377,14 +348,13 @@
 					</p>					
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2019_Adams_IEEEVR_Ear.png" alt="A 3d model of a crosssection of the human skull generated from CT scans is shown in a virtual environment">
 				</div>
 				<div class = "publication_right">							
 					<p> <strong> Play it by Ear: An Immersive Ear Anatomy Tutorial</strong> <br>
-						<span class="highlight">Haley Adams</span>, Jack Noble, William G. Morrel, Alejandro Rivas, Justin Shinn, Robert Labadie, and Bobby Bodenheimer<br>
+						<span class="highlight">Haley Adams</span>, Jack Noble, William G. Morrel, Alejandro Rivas, Justin Shinn, Robert Labadie, Bobby Bodenheimer<br>
 						IEEE VR 2019 <br>
 						[ <a href="https://doi.org/10.1109/VR.2019.8798192">doi</a> ] &nbsp;
 						[ <a href="docs/2019_Adams_IEEEVR_EarAbstract.pdf">pdf</a> ]  &nbsp;
@@ -392,20 +362,18 @@
 					</p>					
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2018_Narasimham_ACMSAP_SpatialMemory.PNG" alt="Two images of a classroom wall featuring a cat poster are shown side by side. The left image is virtual. The right image is real.">
 				</div>
 				<div class = "publication_right">							
 					<p> <strong> Spatial Memory of Children and Teens in Immersive Virtual Environments</strong> <br>
-						Gayathri Narasimham, <span class="highlight">Haley Adams</span>, John Rieser, Sarah Creem-Regehr, Jeanine Stefanucci, and Bobby Bodenheimer<br>
+						Gayathri Narasimham, <span class="highlight">Haley Adams</span>, John Rieser, Sarah Creem-Regehr, Jeanine Stefanucci, Bobby Bodenheimer<br>
 						ACM Symposium on Applied Perception (SAP) 2018 <br>
 						[ <a href="docs/2018_Narasimham_ACMSAP_SpatialMemory.pdf">pdf</a> ]  &nbsp;
 					</p>					
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2017_HASTAC.PNG" alt="The banner from the HASTAC 2017 conference website. The words 'HASTAC 2017' are curved over an image of the globe. The background is filled with sepia colored space dust">
@@ -418,14 +386,26 @@
 					</p>					
 				</div>
 			</div>
-			<hr>
+			<div class = "publication">
+				<div class = "publication_left">
+					<img src="img/2016_Cannon_Education.png" alt="Three middle school girls stand with their arms across each other's shoulders and with their backs facing the camera. They are wearing bright blue camp shirts with 'Camp Codette' on the back.">
+				</div>
+				<div class = "publication_right">							
+					<p> <strong> igniteCS: Addressing Undergraduate CS Retention</strong> <br>
+						Erin Mindell Cannon, Priya Chawla, Katherine Lo, <span class="highlight">Haley Adams</span> <br>
+						ACM Technical Symposium on Computer Science Education (SIGCSE) 2016 <br>
+						[ <a href="https://doi.org/10.1145/2839509.2844658">doi</a> ] &nbsp;
+						[ <a href="docs/2016_Cannon_SIGCSE_igniteCS.pdf">pdf</a> ]  &nbsp;
+					</p>					
+				</div>
+			</div>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2015_Adams_SAP2.PNG" alt="A virtual environment with two white, anthropromorphic robots. Wooden birdhouses are scattered around them in an open field at night.">
 				</div>
 				<div class = "publication_right">							
 					<p> <strong> The Effect of Interpersonal Familiarity on Cooperation in a Virtual Environment</strong> <br>
-						<span class="highlight">Haley Adams</span>, Chelsey Thompson, David Thomas, Farah Sharis, Catherine Grace Jernigan, Corrie Moore, and Betsy Williams<br>
+						<span class="highlight">Haley Adams</span>, Chelsey Thompson, David Thomas, Farah Sharis, Catherine Grace Jernigan, Corrie Moore, Betsy Williams<br>
 						ACM Symposium on Applied Perception (SAP) 2015 <br>
 						[ <a href="https://doi.org/10.1145/2804408.2814185">doi</a> ] &nbsp;
 						[ <a href="docs/2015_Adams_ACMSAP_Abstract.pdf">pdf</a> ]  &nbsp;
@@ -433,29 +413,22 @@
 					</p>					
 				</div>
 			</div>
-			<hr>
 			<div class = "publication">
 				<div class = "publication_left">
 					<img src="img/2013_Adams_GH_Grocery.PNG" alt="A screenshot of a virtual environment where the scene is a grocery store with low fidelity grahpics. Shelves with pasta sauce and noodles are on the right. A line of registers is on the left. The floors are covered in maroon tiles. ">
 				</div>
 				<div class = "publication_right">							
 					<p> <strong> Virtual Reality Implementation for Neurocognitive Assessment</strong> <br>
-						<span class="highlight">Haley Adams</span>, Alyssa Crider, and Victoria Interrante<br>
+						<span class="highlight">Haley Adams</span>, Alyssa Crider, Victoria Interrante<br>
 						Grace Hopper 2013 <br>
 						[ <a>poster</a> ]  &nbsp;
 					</p>					
 				</div>
 			</div>
-			<hr>
-		</article>				
-
+			<br> <br> 
+		</section> <!-- Presentations -->		
 	
 	</main>
-	
-	<!--
-	<footer>
-		<p> <a href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a></p> 
-	</footer>	
-	-->
+		
 </body>
 </html>

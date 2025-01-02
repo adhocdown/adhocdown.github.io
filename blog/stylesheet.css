@@ -292,22 +292,17 @@ details related ul.vert {
 .publication {
 	/* margin: auto; */
 	width: 100%;
-	margin-top: -0.4em;
-	margin-bottom: -0.2em;
 }
 .publication_left {
 	float: left;
 	width: 28%;	
-	margin-top: 0;
-	padding-top: 0;
 }
 
 .publication_left img {
 	display: block;
-	margin-top: 0em; /* aligns image with publication text at top */
+	margin-top: 2em; /* aligns image with publication text at top */
 	overflow: hidden;
-	/*max-width: 18em; */ /*20em*/
-	max-height: 11em;
+	max-width: 18em; /*20em*/	
 }
 .publication_right {
     float: right;
@@ -315,10 +310,9 @@ details related ul.vert {
 	width: 72%;
 	padding-left: 1em; 
 	margin-right: -1em; 
-	padding-top: 0; 
-	margin-top: -14px;
+	padding-top: 1em; 
 	/* padding-bottom: 1em;  */
-	min-height: 12em; /*ensure text block is not smaller than image block */
+	min-height: 11em; /*ensure text block is not smaller than image block */
 }
 /* Clear floats after the columns */
 .publication:after {
@@ -328,43 +322,12 @@ details related ul.vert {
 }
 
 
-/* News, Blog Table Sections */
-table {
-	margin-left: -0.2em;
-	color: #5c5d61;
-}
-td {
-	line-height: 1.2;
-}
-td.month {
-	text-align: left;
-	color: #2e6f40;
-	font-weight: 600;
-	width: 34px;
-}
-td.year {
-	text-align: right;
-	color: #2e6f40;
-	padding-right: 1.8em;
-	font-weight: 600;
-	/* width: 70px; */
-}
-td.break {
-	text-align: center;
-	color: #2e6f40;
-	font-weight: 500;
-	line-height: 2;
+/* News section */
+.news p {	 
+	margin-bottom: -1.0em; 
 }
 
 
-/* Blog Entries Section */
-/* section.blog table {
-	color: #5c5d61;
-} */
-
-
-
-/* Footer Section */
 footer {   
 	position: absolute;
 	float: center;
@@ -373,7 +336,6 @@ footer {
 	width: 100%;
 	bottom: 0;
 }
-
 
 
 /* Change if the viewport is 1200px or smaller */
@@ -389,11 +351,11 @@ footer {
 		font-size: 12pt;
 				} */
 
- /* .publication_left img {
-	clip-path: xywh(20% 0px 160px 20em);
-	translate: -20%;
+ .publication_left img {
+	clip-path: xywh(12% 0px 65% 100%);
+	translate: -12%;
 	overflow: hidden; 
-}  */
+} 
 			
 }
 
@@ -450,7 +412,7 @@ footer {
 					padding-bottom: 0;					
 					/* margin-left: 0;
 					margin-right: 0; */
-					width: 100%;					
+					width: 100%;
 				}	
 	.publication_left {
 					float: left;
@@ -462,7 +424,7 @@ footer {
 				margin-left: 0;
 				padding-left: 0;
 				margin-top: 0;
-				clip-path: xywh(0 10% 100% 70%);
+				clip-path: xywh(0 5% 100% 90%);
 				translate: 0;			
 				}
 	.publication_right {
@@ -470,7 +432,7 @@ footer {
 				width: 100%;
 				padding-left: 0em; 
 				margin-right: -1em; 
-				margin-top: -2.5em; 
+				padding-top: 0em; 
 				padding-bottom: 0em; 
 				min-height: 0; 
 				}						

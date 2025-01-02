@@ -23,23 +23,26 @@
 </head>
 
 <body> 
-	<!-- Navigation Bar  -->
+
+	<!-- <object data="nav.html" name="nav" type="text/html" height="60px"></object> -->
+
+	<!-- Nav Bar -->
 	<nav>
 		<div class="navname"><p>Haley's Commit</p></div>		
 		<ul>
-			<li><a href="index.html#about">About</a></li>
+			<li><a href="index.html">About</a></li>
+			<!-- <li><a href="projects.html">Projects</a></li> -->
 			<li><a href="publications.html">Publications</a></li>
-			<li><a href="index.html#projects">Projects</a></li>
+			<!-- <li><a href="blog.html">Blog</a></li> --> 
 		</ul>				
-	</nav>
-
-	<div id="about"></div> <!-- Tag for navigatiion. Must be positioned here for href nav to reach top of page -->
+	</nav> <!-- Nav -->
 	
 	<main>
-		<!-- Profile Section (Image, Name, Contact Info, Links) -->
+
+		<!-- Profile Section -->
 		<div class = "profile", role="profile">
 			<img src="img/Haley_2024.jpg" alt="A headshot of Haley Adams, the creator of the website. She has long brown hair and a big grin.">	
-			<h1>Haley Adams, PhD</h1>
+			<h2>Haley Adams, PhD</h2>
 			<p>Google <br> 
 				California, USA <br>  
 				haley.xr.adams@gmail.com</p>
@@ -50,100 +53,119 @@
 				<li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>					
 				<li><a href="https://twitter.com/adhocdown"><img src="img/icon_twitter.png" alt="Twitter icon. "></a></li>
 			</ul>			
-		</div>  <!-- end profile section -->
+		</div>  <!-- Profile -->
+
 
 		<!-- Announcement Section (Optional) -->
-		<!-- <article> -->
+		<!-- <section> -->
 		<!-- 	<h2> <span class="announce">Special Announcment</span> </h2> -->
 			<!-- <p>	I will be joining Google's Augmented Reality Team as an Applied Vision Scientist this March!!   </span> </p> -->
 			<!-- <hr> -->
-		<!--  </article> -->
+		<!--  </section> -->  <!-- Announcement -->
+
 
 		<!-- About Section -->
-		<article> 
-			<h2> About </h2>				
+		<section> 
+			<h1> About </h1>				
 			<p> Haley Adams is a research scientist with a focus on perception and behavior in near-eye displays.  She quantifies perceptual differences between virtual, augmented, and real environments to better understand how those differences affect the way people interact with immersive technology.</p>
 			<p> At Google, Haley leverages her expertise to inform software and hardware design for mixed reality (MR) displays. She is privileged to work alongside two of her favorite researchers: 
 				<a href="https://margonzalezfranco.github.io/">Mar Gonzalez-Franco</a> and <a href="https://www.linkedin.com/in/bjorn-vlaskamp-a17937b/">Bj&#246;rn Vlaskamp</a>.  
 				Her work with Mar Gonzalez-Franco focuses on developing novel input solutions, while her collaboration with Bj&#246;rn Vlaskamp centers on spatial perception and display quality assessment.</p>
 			<p> Adams earned a PhD in Computer Science from Vanderbilt University. Her dissertation challenged the traditional assumption that photorealistic graphics were requisite for accurate spatial perception in MR displays. Further, the findings of her investigations provided evidence that non-photorealistic graphics may be useful for improving spatial perception in both normally sighted and visually impaired users. </p>
 			
-			<p> On holiday, Haley enjoys making graphite illustrations, designing costumes, reading, and surfing. These days, she is also learning to ride a unicyle, because balance is important.</p>
+			<p> On holiday, Haley enjoys reading, making costumes, drawing with graphite, and surfing. She is also learning to ride a unicyle, because balance is important.</p>
 
 			
-			<!-- <h3>Research Interests</h3> --> 
-			 <!-- Human-Computer Interaction-->
 			<p> <b>Research Interests</b> - Virtual & Augmented Reality, Human Perception, Computer Graphics, Accessibility</p>				
-
-
+			 <!-- Human-Computer Interaction-->
 			<hr>
-		</article>
-		
+		</section>  <!-- About -->
+
+
 		<!-- Latest News Section -->
-		<article>
+		<section class="news"> <!-- <section class-" news">  -->
 			<h2>News</h2> 
-			<div class="news">
-				<p><b>Dec&ensp;2024</b> &ensp;	- Google announced <a href="https://developers.googleblog.com/en/introducing-android-xr-sdk-developer-preview/">Android XR SDK</a> at XR Unlocked.</p>
-				<!-- <p><b>May<span class="tab7">2024</b> &ensp; - PhD Graduation </p> -->
-				<p><b>Apr&ensp;2024</b> &ensp;	- Joined <a href="https://margonzalezfranco.github.io/">Mar Gonzalez-Franco</a>'s Blended Interactions R&D (BIRD) lab @ Google.</p>
-				<p><b>Mar<span class="tab7">2024</b> &ensp; - Defended Thesis: "Designing Mixed Reality to Improve Spatial Perception & Accessibility".</p>
-				<p><b>Mar<span class="tab7">2023</b> &ensp; - Joined <a href="https://www.linkedin.com/in/bjorn-vlaskamp-a17937b/">Bj&#246;rn Vlaskamp</a>'s Applied Vision Science team @ Google.</p>
-				<p><b>...</b></p>
-				<p><b>Oct<span class="tab10">2022</b> &ensp; 	-  In an invited talk for <a href="https://www.percxr.com/invited-talks">PERCxR</a> @ <a href="https://ismar2022.org/">ISMAR</a> I discussed perception and stylized graphics. </p>
-				<p><b>Jun&ensp;&nbsp;2022</b> &ensp; 	- <a href="https://infosci.cornell.edu/content/gonzalez">Ricardo</a>,&nbsp; <a href="https://www.csua.berkeley.edu/~rajah/#">Raja</a>,&nbsp; <a href="http://www.cs.columbia.edu/~feiner/">Steve</a>,&nbsp; 
-				and I discussed "Research to Practice in XR Accessibility" at <a href="https://xraccess.org/symposium/">XR Access Symposium</a>. You can watch the replay on <a href="https://youtu.be/ZG0w6l4qRr4">YouTube</a>.</p>
-				<p><b>May&nbsp;2022</b> &ensp; 	- I enjoyed talking about my work on depth perception in AR at <a href="https://www.visionsciences.org/">VSS</a>. View my poster <a href="docs/2022_Adams_VSS_Poster.pptx">here</a>.</p>
-				<p><b>Apr&ensp;2022</b> &ensp;	- We hired 2&nbsp; <a href="https://engineering.vanderbilt.edu/summer-research/index.php">VUSE REUs</a>&nbsp; to join our&nbsp; <a href="https://engineering.vanderbilt.edu/summer-research/SummerReOpps/CSSummerResearch/adams-2022.php">Accessibility in AR Project</a>&nbsp; this summer! </p>
-				<p><b>Mar<span class="tab7">2022</b> &ensp; - Presented 2 papers at IEEE VR. Watch the talks on <a href="https://www.youtube.com/channel/UCbm5YEZgxEYXu8RmWppoWkA">YouTube</a>.</p>
-				<p><b>Jun<span class="tab12">2021</b> &ensp; - Received the&nbsp;<a href="https://www.microsoft.com/en-us/research/academic-program/dissertation-grant/grant-recipients/">Mircrosoft Research Dissertation Grant</a>! Read&nbsp;<a href="docs/2021_Adams_MRDG_Application.pdf">my proposal</a>.</p>
-			</p> 	
-			<div id = "publications"></div>	<!-- Tag for navigatiion. Moved up so href positions correctly--> 
-			</div> 	<!-- news -->		
-			<br><hr>
-		</article>				
+			<table>
+				<tr>
+				  <td class="month">Dec</td>
+				  <td class="year">2024</td>
+				  <td>  Google announced <a href="https://developers.googleblog.com/en/introducing-android-xr-sdk-developer-preview/">Android XR SDK</a> at XR Unlocked.</td>
+				</tr>
+				<tr>
+				  <td class="month">Apr</td>
+				  <td class="year">2024</td>
+				  <td> Joined <a href="https://margonzalezfranco.github.io/">Mar Gonzalez-Franco</a>'s Blended Interactions R&D (BIRD) lab @ Google.</td>				  
+				</tr>
+				<tr>
+					<td class="month">Mar</td>
+					<td class="year">2024</td>
+					<td> Defended Thesis: "Designing Mixed Reality to Improve Spatial Perception & Accessibility".</td>
+				</tr>				
+				<tr>
+					<td class="month">Mar</td>
+					<td class="year">2023</td>
+					<td> Joined <a href="https://www.linkedin.com/in/bjorn-vlaskamp-a17937b/">Bj&#246;rn Vlaskamp</a>'s Applied Vision Science team @ Google.</td>
+				</tr>
+				<tr>
+					<td class="break">. . .</td>
+				</tr>
+				<tr>
+					<td class="month">Oct</td>
+					<td class="year">2022</td>
+					<td> In an invited talk for <a href="https://www.percxr.com/invited-talks">PERCxR</a> @ <a href="https://ismar2022.org/">ISMAR</a> I discussed perception and stylized graphics.</td>
+				</tr>
+				<tr>
+					<td class="month">Jun</td>
+					<td class="year">2022</td>
+					<td> Discussed "Research to Practice in XR Accessibility" @ <a href="https://xraccess.org/symposium/">XR Access Symposium</a> with  <a href="https://www.csua.berkeley.edu/~rajah/#">Raja</a> & <a href="http://www.cs.columbia.edu/~feiner/">Steve</a>. Replay on <a href="https://youtu.be/ZG0w6l4qRr4">YouTube</a>. </td>
+				</tr>
+				<tr>
+					<td class="month">May</td>
+					<td class="year">2022</td>
+					<td> Enjoyed talking about my work on depth perception in AR at <a href="https://www.visionsciences.org/">VSS</a>. View my poster <a href="docs/2022_Adams_VSS_Poster.pptx">here</a>.</td>
+				</tr>	
+				<tr>
+					<td class="month">Apr</td>
+					<td class="year">2022</td>
+					<td> Hired 2&nbsp; <a href="https://engineering.vanderbilt.edu/summer-research/index.php">VUSE REUs</a>&nbsp; to join our&nbsp; <a href="https://engineering.vanderbilt.edu/summer-research/SummerReOpps/CSSummerResearch/adams-2022.php">Accessibility in AR Project</a>&nbsp; this summer!</td>
+				</tr>			
+				<tr>
+					<td class="month">Mar</td>
+					<td class="year">2022</td>
+					<td> Presented 2 papers at IEEE VR. Watch the talks on <a href="https://www.youtube.com/channel/UCbm5YEZgxEYXu8RmWppoWkA">YouTube</a>.</td>
+				</tr>		
+				<tr>
+					<td class="month">Jun</td>
+					<td class="year">2021</td>
+					<td> Received the&nbsp;<a href="https://www.microsoft.com/en-us/research/academic-program/dissertation-grant/grant-recipients/">Mircrosoft Research Dissertation Grant</a>! Read&nbsp;<a href="docs/2021_Adams_MRDG_Application.pdf">my proposal</a>.</td>
+				</tr>					
+			</table>
+			<!-- <br> <hr> -->
+			<br> <hr> <br> <br> <br>
+		</section> <!-- News -->
 		
-			
-		 <!-- Researh Projects Section -->	
-		 <article> 				
-			<h2> Projects </h2> 												
-			<div id = "projects"></div> <!-- Tag for navigatiion-->								
 	
-			<h3> Women in Computing -- ACM-W Student Chapter </h3>
-				<p>		I was a founding member and chair of both my undergraduate and graduate university chapters. 
-						In 2017, a team of undergraduates and I also founded WiC's first annual emerging technology conference 
-						(Emerge) at Vanderbilt University. For this event, I enjoyed providing my expertise in virtual reality, handling event logistics, and recruiting 
-						guest speakers (2013-2015, 2016-2017). <br>							
-						[ <a href="https://studentorg.vanderbilt.edu/womenincomputing/">vu women in computing</a> ] &nbsp;
-						[ <a href="https://www.facebook.com/events/529342037536818/542323519572003/?notif_t=admin_plan_mall_activity&notif_id=1538596849069402">emerge 2018</a> ] &nbsp;
-				</p> <br>
-																	
-				<h3> Camp Codette </h3>
-				<p>		In 2015, <a href="https://www.rhodes.edu/bio/sandersb">Dr. Betsy Williams Sanders</a> and I founded a coding camp
-						for middle and high school girls, which was initially sponsored by a gift from Google Education's igniteCS program.
-						I designed the curriculum and managed a team of undergradate counselors as we instructed sessions for 
-						Python, Scratch, and Unity (2015, 2016). <br>
-						[ <a href="http://www.cs.rhodes.edu/camp/">camp codette</a> ]  &nbsp;
-						[ <a href="https://ignitecs.withgoogle.com/">igniteCS</a> ]  &nbsp;
-						[ <a href="https://news.rhodes.edu/stories/putting-camp-campus">news article</a> ]  &nbsp;
-						[ <a href="https://www.googblogs.com/sparking-passion-in-computer-science-through-undergraduate-mentoring/">google blog</a> ] &nbsp;
-				</p> <br>			
-			</article>	
-		
-		<!-- Broken WebGL - Oops -->
-		<article>
-				<div class = "project">
-					<p  style="text-decoration: none; "> 
-					<a style="text-decoration: none; " href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a>
-					</p>			
-				</div> 								
-		</article>
+	<!-- Bio Section -->
+	 <!-- 
+	<section> 
+		<h1> Bio </h1>				
+		<p> First experience in 2013.... REU with Vicki Interrante at University of Minnesota </p>
+		<p> Undergraduate...</p>
+		<p> PhD nonsense </p>		
+		<br> <hr> <br> <br>
+	</section>
+	-->  <!-- Bio -->
 
 	</main>
-	
-	<!--
+
 	<footer>
-		<p> <a href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a></p> 
-	</footer>	
-	-->
+		<!-- <p> <a href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a></p>  -->
+		<p  style="text-decoration: none; "> 
+			<a style="text-decoration: none; " href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a>
+			</p>
+	</footer>
+
 </body>
+
+
 </html>
