@@ -17,8 +17,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
 	<!-- Style Sheets -->
+    <link rel="preload" href="IncludeHTML.js" as="script">
 	<link rel="stylesheet" href="stylesheet.css">
-	<link rel="preload" href="IncludeHTML.js" as="script">
 	<!-- Title  	 -->
 	<title>Haley Adams</title>
 </head>
@@ -36,26 +36,15 @@
 	
 	<!-- Nav Bar -->
 	<div include-html="nav.html"></div> 
-
+	
 	<main>		
-	<!-- Profile -->
-	<!-- <div include-html="profile.html"></div>  -->
 
-	<!-- Profile Section -->
-	<div class = "profile", role="profile">
-		<img src="img/Haley_2024.jpg" alt="A headshot of Haley Adams, the creator of the website. She has long brown hair and a big grin.">	
-		<h2>Haley Adams, PhD</h2>
-		<p>Google <br> 
-			California, USA <br>  
-			haley.xr.adams@gmail.com</p>
-		<ul>
-			<li><a href="docs/Adams_CV_May_2025.pdf"><img src="img/icon_cv.png" alt="Curriculum vitae PDF icon"></a></li>
-			<li><a href="https://www.linkedin.com/in/haley-alexander-adams/"><img src="img/icon_linkedin.png" alt="LinkedIn icon. "></a></li>
-			<li><a href="https://github.com/adhocdown"><img src="img/icon_github.png" alt="GitHub icon. "></a></li>
-			<li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>					
-			<li><a href="https://twitter.com/adhocdown"><img src="img/icon_twitter.png" alt="Twitter icon. "></a></li>
-		</ul>			
-	</div>  <!-- Profile -->	 
+	<!-- Profile -->
+	<div include-html="profile.html"></div> 
+
+		<!-- Include HTMLs JS Script -->
+		<script src="IncludeHTML.js"> </script>
+		<script> includeHTML(); </script>
 
 		<!-- Announcement Section (Optional) -->
 		<!-- <section> -->
@@ -169,9 +158,6 @@
 			</p>
 	</footer>
 
-	<!-- Include HTMLs JS Script -->
-	<script src="IncludeHTML.js"> </script> 
-	<script> includeHTML(); </script> 
 
 </body>
 

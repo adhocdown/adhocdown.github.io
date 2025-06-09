@@ -6,6 +6,11 @@ Delete the attribute and call this function again.
 Exit function. 
 */
 
+// window.onload = function() {
+//   includeHTML(); // Call your function here
+// };
+
+
 
 function includeHTML() {
   /* Loop through a collection of all HTML elements: */
