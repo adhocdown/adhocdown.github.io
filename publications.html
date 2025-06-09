@@ -22,24 +22,21 @@
 	<title>Haley Adams - Publications</title>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EMSR0RN00Y');
-</script>
 	
 <body> 
 	<!-- Nav Bar -->
-	<div include-html="nav.html"></div> 
+	<!-- <div include-html="nav.html"></div>  -->
+	<nav>
+		<div class="navname"><p>Haley's Commit</p></div>		
+		<ul>
+			<li><a href="index.html">About</a></li>
+			<li><a href="publications.html">Publications</a></li>
+			<li><a href="blog.html">Blog</a></li>
+		</ul>				
+	</nav>	<!-- Nav -->	 
 
 	<main>		
 	<!-- Profile -->
-	<!-- <div include-html="profile.html"></div>  -->
-
-	<!-- Profile Section -->
 	<div class = "profile", role="profile">
 		<img src="img/Haley_2024.jpg" alt="A headshot of Haley Adams, the creator of the website. She has long brown hair and a big grin.">	
 		<h2>Haley Adams, PhD</h2>
@@ -434,8 +431,17 @@
 	</main>	
 
 	<!-- Include HTMLs JS Script -->
-	<script src="IncludeHTML.js"> </script>
-	<script> includeHTML(); </script>
+	<!-- <script src="IncludeHTML.js"> </script> -->
+	<!-- <script> includeHTML(); </script> -->
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-EMSR0RN00Y');
+	</script>
 
 </body>
 </html>
