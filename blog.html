@@ -22,98 +22,76 @@
 	<title>Haley Adams</title>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EMSR0RN00Y');
-</script>
-	
+
 <body> 
-	<!-- <object data="nav.html" name="nav" type="text/html" height="60px"></object> -->
-
-	<!-- 
-	<nav>
-		<div class="navname"><p>Haley's Commit</p></div>		
-		<ul>
-			<li><a href="index.html">About</a></li>
-			<li><a href="projects.html">Projects</a></li>
-			<li><a href="publications.html">Publications</a></li>
-			<li><a href="blog.html">Blog</a></li>
-		</ul>				
-	</nav>	 -->
-
+	<!--  Nav Bar  -->
 	<div include-html="nav.html"></div> 
-
 	
 	<main>
-
-		<!-- Profile Section -->
-		<div class = "profile", role="profile">
-			<img src="img/Haley_2024.jpg" alt="A headshot of Haley Adams, the creator of the website. She has long brown hair and a big grin.">	
-			<h2>Haley Adams, PhD</h2>
-			<p>Google <br> 
-				California, USA <br>  
-				haley.xr.adams@gmail.com</p>
-			<ul>
-				<li><a href="docs/Adams_CV_December_2024.pdf"><img src="img/icon_cv.png" alt="Curriculum vitae PDF icon"></a></li>
-				<li><a href="https://www.linkedin.com/in/haley-alexander-adams/"><img src="img/icon_linkedin.png" alt="LinkedIn icon. "></a></li>
-				<li><a href="https://github.com/adhocdown"><img src="img/icon_github.png" alt="GitHub icon. "></a></li>
-				<li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>					
-				<li><a href="https://twitter.com/adhocdown"><img src="img/icon_twitter.png" alt="Twitter icon. "></a></li>
-			</ul>			
-		</div>  <!-- Profile -->
+		<!-- Profile -->
+		<div include-html="profile.html"></div> 
 
 
-		<!-- Blog Section -->
+		<!--  Blog Intro  -->
 		<section> 
 			<h1> Blog </h1>			
-			<p> There are several topics that I regularly get enquiries about. Academic writing can be obtuse and onerous to read. This blog is intented to provide easy to understand discussions of complex topics. </p>
+			<p> Academic writing is a slog. I will break down complex subjects into simple pieces in this blog. </p>
+			<p>	Plus, this is a great place for me to answer some of the questions I get asked most frequently. </p>
 			<hr>
 		</section>
-		
 
-
-		<!-- Entries Section -->
-		<section class="blog"> <!-- <section class-" news">  -->
+		<!--  Blog Entries  -->
+		<section class="blog"> 
 			<h2>Entries</h2> 
 			<table>
 				<tr>
-                    <td class="month">Jan</td>
+                    <td class="month">Jun</td>
                     <td class="year">2025</td>
-                    <td><a href="blog/template.html">Stay Tuned!</a> </td>
+					<td>Stay Tuned!</td>
+                    <!-- <td><a href="blog/template.html">Stay Tuned!</a> </td> -->
 				</tr>
 				<tr>
-                    <td class="month">Feb</td>
+                    <td class="month">Jul</td>
                     <td class="year">2025</td>
-                    <td><a href="blog/test.html">Stay Tuned!</a> </td>
+					<td>Stay Tuned!</td>
+                    <!-- <td><a href="blog/test.html">Stay Tuned!</a> </td> -->
 				</tr>
 				<tr>
-                    <td class="month">Mar</td>
+                    <td class="month">Aug</td>
                     <td class="year">2025</td>
                     <td>  Say Tuned! </td>
 				</tr>				
-                <tr>
+                <!-- <tr>
                     <td class="month">Apr</td>
                     <td class="year">2025</td>
                     <td>  Say Tuned! </td>
 				</tr>				<tr>
                     <td class="month">Jun</td>
                     <td class="year">2025</td>
-                    <td>  Say Tuned! </td>
-				</tr>				
+                    <td>  Say Tuned! </td> -->
+				</tr>
 			</table>
 			<br> <hr>
 		</section> <!-- Entries -->	
 
 	</main>
 
+<!-- Include HTMLs JS Script -->
+<script src="IncludeHTML.js"> </script>
+<script> includeHTML(); </script>
 	
-<script src="IncludeHTML.js">IncludeHTML(); </script>
+<!-- idk whyI can't do this in one line... -->
+<!-- <script src="IncludeHTML.js"> includeHTML(); </script> -->
 
 </body>
 
+<!-- Google Tag (gtag.js) -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EMSR0RN00Y');
+</script> -->
 
 </html>
