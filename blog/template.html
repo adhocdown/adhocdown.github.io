@@ -17,7 +17,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
 	<!-- Style Sheets -->
-	<link rel="stylesheet" href="blog.css">
+	<link rel="stylesheet" href="../themes/blog.css">
+	<link href="../themes/prism.css" rel="stylesheet" />
 	<!-- Title  	 -->
 	<title>Haley Adams</title>
 </head>
@@ -71,6 +72,19 @@
 		<p>  Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. </p>
 
 
+		<pre>
+		<code  class="language-matlab"> 
+		% Code comment for MATLAB
+		im = imread('test.png');
+		
+		% Do some other things...
+		size(im);
+		</code>
+		</pre>
+
+
+		<p> Final words</p>
+
     </section>
 
 
@@ -93,7 +107,7 @@
 	<section class="footer"> 
 		<table>
 			<tr>
-				<td class="previous">< Previous</td>
+				<td class="previous"> < Previous</td>
 				<td class="next"> <a href="test.html">Next ></a> </td>            
 			</tr>
 		</table>		
@@ -104,6 +118,7 @@
 	</section>  <!-- Blog -->	
 
 	</main>
+	<script src="../themes/prism.js"></script>
 </body>
 
 

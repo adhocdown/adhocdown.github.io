@@ -10,10 +10,14 @@ var Detector = {
 
 		try {
 
-			var canvas = document.createElement( 'canvas' ); return !! ( window.WebGLRenderingContext && ( canvas.getContext( 'webgl' ) || canvas.getContext( 'experimental-webgl' ) ) );
+			// var canvas = document.createElement( 'canvas' ); return !! ( window.WebGLRenderingContext && ( canvas.getContext( 'webgl' ) || canvas.getContext( 'experimental-webgl' ) ) );
+			const canvas = document.querySelector('canvas'); // Or get your canvas element
+			const gl = canvas.getContext('webgl') || canvas.getContext('webgl2') || canvas.getContext( 'experimental-webgl' );
 
 		} catch ( e ) {
 
+
+    		// Provide fallback content or a message to the user
 			return false;
 
 		}

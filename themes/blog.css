@@ -200,6 +200,17 @@ td.next a {
 }
 
 
+/* Code block style */
+pre code {
+  font-family: monospace;    /* Use a monospaced font for readability */
+  font-size: 10px;
+  line-height: 1.5;          /* Improve line spacing */
+}
+
+
+
+
+
 /* Change if the viewport is 1200px or smaller */
 /* Playing around wih cropping. Totally unnecessary. */
 @media screen and (max-width: 1200px) {

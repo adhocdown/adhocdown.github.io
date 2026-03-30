@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script> -->
-    <script src="build/three.min.js"></script>
 
     <style>
 			body {
@@ -40,15 +39,11 @@
     <!-- <a href="http://threejs.org" target="_blank" rel="noopener">three.js</a> - effects - stereo. skybox by <a href="http://www.zfight.com/" target="_blank" rel="noopener">Humus?</a>  -->
 </div>
 
-<script src="build/three.js"></script>
-
+<script src="build/three.min.js"></script>
 <script src="StereoEffect.js"></script>
-
 <script src="Detector.js"></script>
 
 <script>
-
-			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 			var container;
 			var camera, scene, renderer, effect;
@@ -56,7 +51,6 @@
 			var mesh, lightMesh, geometry;
 			var spheres = [];
 
-			var directionalLight, pointLight;
 			var mouseX = 0, mouseY = 0;
 
 			var windowHalfX = window.innerWidth / 2;
@@ -64,8 +58,16 @@
 
 			document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
-			init();
-			animate();
+			if ( ! Detector.webgl ) {
+
+				Detector.addGetWebGLMessage();
+
+			} else {
+
+				init();
+				animate();
+
+			}
 
 			function init() {
 
@@ -77,17 +79,18 @@
 
                 // Scene Setup
 				scene = new THREE.Scene();
+
+				var urls = [ 'thefog_rt.jpg', 'thefog_lf.jpg', 'thefog_up.jpg', 'thefog_dn.jpg', 'thefog_bk.jpg', 'thefog_ft.jpg' ];
 				scene.background = new THREE.CubeTextureLoader()
 					.setPath( 'https://adhocdown.github.io/textures/' )
-					.load( [ 'thefog_rt.jpg', 'thefog_lf.jpg', 'thefog_up.jpg', 'thefog_dn.jpg', 'thefog_bk.jpg', 'thefog_ft.jpg' ] );
-					//.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
-				var geometry = new THREE.SphereBufferGeometry( 100, 32, 16 );
+					.load( urls );
+
+				geometry = new THREE.SphereBufferGeometry( 100, 32, 16 );
 
                 // For Refraction of Bubbles
 				var textureCube = new THREE.CubeTextureLoader()
 					.setPath( 'https://adhocdown.github.io/textures/' )
-					.load( [ 'thefog_rt.jpg', 'thefog_lf.jpg', 'thefog_up.jpg', 'thefog_dn.jpg', 'thefog_bk.jpg', 'thefog_ft.jpg' ] );
-					//.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
+					.load( urls );
 				textureCube.mapping = THREE.CubeRefractionMapping;
 				var material = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube, refractionRatio: 0.95 } );
 
@@ -106,6 +109,7 @@
 				// Render and Use Stereo Effect
 				renderer = new THREE.WebGLRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.autoClear = false;
 				container.appendChild( renderer.domElement );
 
 				effect = new THREE.StereoEffect( renderer );

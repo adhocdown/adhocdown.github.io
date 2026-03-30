@@ -10,31 +10,26 @@ Exit function.
 //   includeHTML(); // Call your function here
 // };
 
+async function includeHTML() {
+  /* Find all elements with the "include-html" attribute */
+  const elements = document.querySelectorAll("[include-html]");
+  if (elements.length === 0) return;
 
+  for (const elmnt of elements) {
+    const file = elmnt.getAttribute("include-html");
+    /* Remove the attribute immediately to prevent infinite loops if fetch fails */
+    elmnt.removeAttribute("include-html");
 
-function includeHTML() {
-  /* Loop through a collection of all HTML elements: */
-  id = document.getElementsByTagName("*");
-  for (i = 0; i < id.length; i++) {
-    elmnt = id[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("include-html");
     if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("include-html");
-          includeHTML();
-        }
+      try {
+        const response = await fetch(file);
+        elmnt.innerHTML = response.ok ? await response.text() : "Page not found.";
+      } catch (err) {
+        elmnt.innerHTML = "Error loading content.";
+        console.error("Inclusion error:", err);
       }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
     }
   }
+  /* Recursively call to handle potential nested includes in newly added content */
+  await includeHTML();
 }

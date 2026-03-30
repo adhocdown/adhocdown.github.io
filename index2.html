@@ -18,7 +18,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
 	<!-- Style Sheets -->
     <link rel="preload" href="IncludeHTML.js" as="script">
-	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="stylesheet" href="themes/stylesheet.css">
 	<!-- Title  	 -->
 	<title>Haley Adams</title>
 </head>
@@ -34,17 +34,13 @@
 	
 <body> 
 	
-	<!-- Nav Bar -->
-	<div include-html="nav.html"></div> 
-	
-	<main>		
+	<!-- Nav Bar -->	
+	<div id="nav-container"></div>
 
-	<!-- Profile -->
-	<div include-html="profile.html"></div> 
+	<main>
 
-		<!-- Include HTMLs JS Script -->
-		<script src="IncludeHTML.js"> </script>
-		<script> includeHTML(); </script>
+	<!-- Profile  -->
+	<div id="profile-container"></div>
 
 		<!-- Announcement Section (Optional) -->
 		<!-- <section> -->
@@ -136,28 +132,36 @@
 			<!-- <br> <hr> -->
 			<br> <hr> <br> <br> <br>
 		</section> <!-- News -->
-		
-	
-	<!-- Bio Section -->
-	 <!-- 
-	<section> 
-		<h1> Bio </h1>				
-		<p> First experience in 2013.... REU with Vicki Interrante at University of Minnesota </p>
-		<p> Undergraduate...</p>
-		<p> PhD nonsense </p>		
-		<br> <hr> <br> <br>
-	</section>
-	-->  <!-- Bio -->
 
 	</main>
 
 	<footer>
 		<!-- <p> <a href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a></p>  -->
 		<p  style="text-decoration: none; "> 
-			<a style="text-decoration: none; " href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a>
+			<!-- <a style="text-decoration: none; " href="webgl_stereo.html">~ ~ ~ ~ ~ ~ </a> -->
+			~ ~ ~ ~ ~ ~
 			</p>
 	</footer>
 
+	<!-- Fetch Nav Bar -->
+	<script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
+
+	<!-- Fetch Profile Section -->
+	<script>
+        fetch('profile.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('profile-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
 
 </body>
 
