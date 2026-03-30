@@ -1,3 +1,3 @@
-Personal Website for Haley Adams (adhocdown)
+Personal website for Haley Adams (adhocdown)
 
-I update th intermittently
+I update this intermittently

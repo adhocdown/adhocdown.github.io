@@ -24,33 +24,13 @@
 
 	
 <body> 
-	<!-- Nav Bar -->
-	<!-- <div include-html="nav.html"></div>  -->
-	<nav>
-		<div class="navname"><p>Haley's Commit</p></div>		
-		<ul>
-			<li><a href="index.html">About</a></li>
-			<li><a href="publications.html">Publications</a></li>
-			<li><a href="blog.html">Blog</a></li>
-		</ul>				
-	</nav>	<!-- Nav -->	 
+	<!-- Nav Bar -->	
+	<div id="nav-container"></div>
 
-	<main>		
-	<!-- Profile -->
-	<div class = "profile", role="profile">
-		<img src="img/Haley_2024.jpg" alt="A headshot of Haley Adams, the creator of the website. She has long brown hair and a big grin.">	
-		<h2>Haley Adams, PhD</h2>
-		<p>Google <br> 
-			California, USA <br>  
-			haley.xr.adams@gmail.com</p>
-		<ul>
-			<li><a href="docs/Adams_CV_May_2025.pdf"><img src="img/icon_cv.png" alt="Curriculum vitae PDF icon"></a></li>
-			<li><a href="https://www.linkedin.com/in/haley-alexander-adams/"><img src="img/icon_linkedin.png" alt="LinkedIn icon. "></a></li>
-			<li><a href="https://github.com/adhocdown"><img src="img/icon_github.png" alt="GitHub icon. "></a></li>
-			<li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>					
-			<li><a href="https://twitter.com/adhocdown"><img src="img/icon_twitter.png" alt="Twitter icon. "></a></li>
-		</ul>			
-	</div>  <!-- Profile -->	
+	<main>
+
+	<!-- Profile  -->
+	<div id="profile-container"></div>
 
 
     <section>
@@ -430,17 +410,33 @@
 	
 	</main>	
 
-	<!-- Include HTMLs JS Script -->
-	<!-- <script src="IncludeHTML.js"> </script> -->
-	<!-- <script> includeHTML(); </script> -->
+	<!-- Fetch Nav Bar -->
+	<script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
+
+	<!-- Fetch Profile Section -->
+	<script>
+        fetch('profile.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('profile-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-EMSR0RN00Y');
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-EMSR0RN00Y');
 	</script>
 
 </body>

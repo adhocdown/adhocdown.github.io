@@ -22,44 +22,15 @@
 	<title>Haley Adams - Projects</title>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-EMSR0RN00Y');
-</script>
 	
 <body> 
-	<!-- Navigation Bar  -->
-    <nav>
-		<div class="navname"><p>Haley's Commit</p></div>		
-		<ul>
-			<li><a href="index.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="publications.html">Publications</a></li>
-			<li><a href="blog.html">Blog</a></li>
-		</ul>				
-	</nav>
-	
-	<main>		
+	<!-- Nav Bar -->	
+	<div id="nav-container"></div>
 
-    <!-- Profile Section (Image, Name, Contact Info, Links) -->
-    <div class = "profile", role="profile">
-        <img src="img/Haley_2024.jpg" alt="A headshot of Haley Adams, the creator of the website. She has long brown hair and a big grin">	
-        <h2>Haley Adams, PhD</h2>
-        <p>Google <br> 
-            California, USA <br>  
-            haley.xr.adams@gmail.com</p>
-        <ul>
-            <li><a href="docs/Adams_CV_December_2024.pdf"><img src="img/icon_cv.png" alt="Curriculum vitae PDF icon"></a></li>
-            <li><a href="https://www.linkedin.com/in/haley-alexander-adams/"><img src="img/icon_linkedin.png" alt="LinkedIn icon. "></a></li>
-            <li><a href="https://github.com/adhocdown"><img src="img/icon_github.png" alt="GitHub icon. "></a></li>
-            <li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>					
-            <li><a href="https://twitter.com/adhocdown"><img src="img/icon_twitter.png" alt="Twitter icon. "></a></li>
-        </ul>			
-    </div>  <!-- end profile section -->
+	<main>
+
+	<!-- Profile  -->
+	<div id="profile-container"></div>
 
     <section>
 		<h1>Projects</h1>
@@ -338,5 +309,34 @@
 
 	</main>
 	
+    <!-- Fetch Nav Bar -->
+	<script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
+
+	<!-- Fetch Profile Section -->
+	<script>
+        fetch('profile.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('profile-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-EMSR0RN00Y');
+	</script>
+
 </body>
 </html>

@@ -25,17 +25,8 @@
 
 <body> 
 
-	<!-- <object data="nav.html" name="nav" type="text/html" height="60px"></object> -->
-
-	<!-- Navigation Bar  -->
-	<nav>
-		<div class="navname"><p>Haley's Commit</p></div>		
-		<ul>
-			<li><a href="../index.html">About</a></li>
-			<li><a href="../publications.html">Publications</a></li>
-			<li><a href="../blog.html">Blog</a></li>
-		</ul>				
-	</nav>
+	<!-- Nav Bar -->	
+	<div id="nav-container"></div>
 	
 	<main>
 
@@ -118,7 +109,21 @@
 	</section>  <!-- Blog -->	
 
 	</main>
+
+	<!-- Fetch Nav Bar -->
+	<script>
+        fetch('../nav.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav-container').innerHTML = html;
+            })
+            .catch(error => console.error('Error loading HTML:', error));
+    </script>
+
+	<!-- Prism.js Code Syntax Highlighting -->
 	<script src="../themes/prism.js"></script>
+
+	
 </body>
 
 
